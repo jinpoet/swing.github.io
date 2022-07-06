@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>시작페이지</title>
+    <script language ="javascript">
+        function sayHello()
+        { var textBox = document.getElementById("myName");  //텍스트의 id값을 받는다 if (textBox != null)           {  alert(textBox.value + "님 안녕하세염");     //텍스트박스의 value를 받아서 알람  } 
+    }
+        </script>
+        
 </head>
 <body>
     <div style="height: 50px; background-color:snow;">
@@ -29,7 +35,7 @@
             <label for="Reader">Reader</label>
             <pre style="color: darkblue;"><b>*스윙용어로 Follower는 여성, Reader는 남성을 지칭합니다.</b></pre><br>
         - 이름을 입력해주세요 -<br>
-        <input type="text" name="성명" value="한글 이름을 입력하세요" onfocus="this.value=''" onblur="this.placeholder='한글 이름을 입력하세요'">
+        <input type="text" name="성명" value="한글 이름을 입력하세요" onfocus="this.value=''" onblur="this.placeholder='한글 이름을 입력하세요'" id="myName">
         <br><br>
         - 닉네임을 입력해주세요 -<br>
         <input type="text" name="닉네임" value="한글or영문 닉네임을 입력하세요" onfocus="this.value=''" onblur="this.placeholder='한글or영문 닉네임을 입력하세요'">
